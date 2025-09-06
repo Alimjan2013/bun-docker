@@ -5,7 +5,7 @@ serve({
         const url = new URL(request.url);
         if (url.pathname === '/'){
             console.log("Received request at /");
-            return new Response(JSON.stringify({"Status": "OK"}), {
+            return new Response(JSON.stringify({"Status": "OK-new"}), {
                 headers: {'content-type': 'application/json'}
             });
         } else {
